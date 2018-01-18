@@ -1,0 +1,19 @@
+{
+  "name": "my-first-bot",
+  "version": "0.0.1",
+  "description": "test bot 2018-01-07",
+  "main": "index.js",
+  "dependencies": {
+    "botpress": "1.x",
+    "botpress-messenger": "^2.2.9",
+    "botpress-web": "1.x",
+    "mysql": "^2.15.0"
+  },
+  "scripts": {
+    "start": "botpress start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chamara",
+  "license": "Unlicense",
+  "devDependencies": {}
+}

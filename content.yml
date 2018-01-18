@@ -1,0 +1,25 @@
+welcome:
+  - Welcome! Please use the menu to try out the different features.
+
+fallback:
+  - Sorry I don't understand
+
+trivia-question:
+  - text: "}"
+    quick_replies:
+      
+      - "<> }"
+      
+
+trivia-good:
+  - text:
+    - Yay! Good answer :)
+    - You rock!
+    - Good answer!
+
+trivia-bad:
+  - text:
+    - Nope
+    - You're not good
+    - That's not the right answer..
+    - Not exactly what I expected of you

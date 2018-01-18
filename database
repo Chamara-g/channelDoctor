@@ -1,0 +1,53 @@
+CREATE TABLE `tbl_doctor` (
+  `ID` char(32) COLLATE utf8_unicode_ci NOT NULL,
+  `SERIAL_NUMBER` char(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `SURNAME` char(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `INITIALS` char(64) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `FIRST_NAME` char(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `NIC` char(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `SEX` char(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ETHNICITY` char(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `COUNTRY` char(64) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `MOBILE` char(16) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `EMAIL` char(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `ADDRESS` char(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `MP` char(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `PR` char(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Name_degree` char(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Institution` char(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `Year obtained` char(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `WORK_TIME` char(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `BOOK_FEES` char(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `MAX_NUM` char(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+);
+
+
+CREATE TABLE `tbl_book` (
+  `ID` char(32) COLLATE utf8_unicode_ci NOT NULL,
+  `NAME` char(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `NIC` char(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `MOBILE` char(16) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `EMAIL` char(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `DOC_ID` char(128) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+);
+
+insert into tbl_book values 
+	('1000','Gihan chamara','953060108V','0712231234','92 kandy road wattegama','92108');
+
+insert into tbl_doctor values 
+	('1000','225','Kavisekara','TT','Thilina','921080234V','male','sinhala','srilanka','0712345234','kavisekara12@gmail.com','92/4,theldeniya road,kandy ',
+		'MP192345','PR1234','MBBS BMBS','Peradeniya university','2012','7.30-9.00 and 16.30-19.30','RS.1000','10');
+
+insert into tbl_doctor values 
+	('1007','224','Rathnayae','TT','samanthi','921080234V','male','sinhala','srilanka','0712345234','kavisekara12@gmail.com','92/4,theldeniya road,kandy',
+		'MP192345','PR1234','MBBS BMBS','Peradeniya university','2012','7.30-9.00 and 16.30-19.30','RS.1000','10'),
+	('1002','231','Thennakoon','TT','Malith','921080234V','male','sinhala','srilanka','0712345234','kavisekara12@gmail.com','92/4,theldeniya road,kandy ',
+		'MP192345','PR1234','MBBS BMBS','Peradeniya university','2012','7.30-9.00 and 17.30-18.30','RS.1000','10'),
+	('10033','232','Siribaddana','TT','Anooma','921080234V','male','sinhala','srilanka','0712345234','kavisekara12@gmail.com','92/4,theldeniya road,kandy ',
+		'MP192345','PR1234','MBBS BMBS','Peradeniya university','2012','7.30-9.00 and 16.30-19.30','RS.1000','10'),
+	('1004','235','Silva','TT','kumari','921080234V','male','sinhala','srilanka','0712345234','kavisekara12@gmail.com','92/4,theldeniya road,kandy ',
+		'MP192345','PR1234','MBBS BMBS','Peradeniya university','2012','7.30-9.00 and 16.30-19.30','RS.1000','10'),
+	('1005','236','Gunathilaka','TT','Chanaka','921080234V','male','sinhala','srilanka','0712345234','kavisekara12@gmail.com','92/4,theldeniya road,kandy ',
+		'MP192345','PR1234','MBBS BMBS','Peradeniya university','2012','7.30-9.00 and 16.30-19.30','RS.1000','10');	
